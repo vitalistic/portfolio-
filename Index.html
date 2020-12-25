@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<body background="back2.png" 
+style=" background-repeat:no-repeat;
+background-position:center;
+background-attachment:fixed;
+background-size:cover;"
+height="auto"
+width="1000px"  >
+<header>  <div id="clock">8:10:45</div> </header>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class=
+  "closebtn"
+
+  onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="quotegenerator.html">Project 1</a>
+    <a href="intergration.html">Project 2</a>
+    <a href="quad.html">Project 3</a>
+    <a href="temp.html">Project 4</a>
+  </div>
+</div><span style="font-size:30px;cursor:
+pointer"
+
+onclick="openNav()"><font color="red" >&#9776;</font>
+</span>
+
+<center><div><img src="imgaspp.jpg"
+ height="150px" width="150px" 
+ style="border:navy 12px solid ; border-radius:50px;" 
+ >
+ <br><font face="cursive" color="Red" size="5px"   ><h1><b>Vitalis Ofomah</b></h1></font>
+ </div></center>
+ <hr color="blue" width="auto" height="0px"  >
+<font color=" darkred" size="3px" face="sarif"  >
+<h3>
+<center>MY NAME IS VITALIS OFOMAH
+<br>Hail from Azigbo in Nnewi south local government area of Anambra state Nigeria 
+<br>I am a web designer and An Entrepreneur 
+<br>An introvert that loves everything about Technology and Investment 
+<br>My hobbies are Reading, Coding, playing video games, listening to music, Investing. 
+<hr color="blue"   ></center></h3>
+<ul><li><h1>My coding projects </h1></li>
+<p><h3>
+<br><a href="quotegenerator.html" >Project 1</a>
+<br><a href="intergration.html" >Project 2</a>
+<br><a href="quad.html" >Project 3</a>
+<br><a href="temp.html" >Project 4</a>
+</h3>
+</ul></p>
+
+<hr color="blue" >
+
+
+
+
+</center>
+
+
+</font>
+ 
+
+ <style>
+header   {
+z-index:0;
+position:fixed;
+background:linear-gradient(red,navy);
+right:20px;
+}
+
+
+a{
+text-decoration:none;
+color:red;}
+
+
+.overlay {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: purple;
+   background-color:blue;
+   overflow-x: hidden;
+   transition: 0.5s
+   border-style:solid;
+   border-radius:20px;;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: red;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height:450px){
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+</style>
+
+
+
+<script>
+function openNav() {
+ document.getElementById("myNav")
+ .style.width = "50%";
+}
+
+function closeNav() {
+ document.getElementById("myNav")
+ .style.width = "0%";
+}
+
+
+setInterval(showTime, 1000); 
+        function showTime() { 
+            let time = new Date(); 
+            let hour = time.getHours(); 
+            let min = time.getMinutes(); 
+            let sec = time.getSeconds(); 
+            am_pm = "AM"; 
+  
+            if (hour > 12) { 
+                hour -= 12; 
+                am_pm = "PM"; 
+            } 
+            if (hour == 0) { 
+                hr = 12; 
+                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min; 
+            sec = sec < 10 ? "0" + sec : sec; 
+  
+            let currentTime = hour + ":"  
+                + min + ":" + sec + am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime(); 
+</script>
+ 
+ 
+ 
+</body>
+</html>
